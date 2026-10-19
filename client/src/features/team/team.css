@@ -1,0 +1,134 @@
+.team-page {
+  flex: 1;
+  min-width: 0;
+  padding: 24px;
+}
+.team-page h1 {
+  margin: 0 0 4px;
+  font-size: 20px;
+}
+.team-page__intro {
+  margin: 0 0 24px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* Invite form and the link it produces */
+.invite-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 420px;
+}
+.invite-result {
+  max-width: 420px;
+  margin-top: 24px;
+  padding: 16px;
+  box-sizing: border-box;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-large);
+}
+.invite-result__link {
+  display: block;
+  margin: 8px 0 12px;
+  padding: 8px 10px;
+  background: var(--surface);
+  border-radius: var(--radius);
+  font-size: 12px;
+  word-break: break-all;
+}
+.invite-result__note {
+  margin: 12px 0 0;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* Pending invites and team members */
+.team-section {
+  max-width: 820px;
+  margin-top: 32px;
+}
+.team-section h2 {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+.team-section__empty {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.team-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 130px 160px 260px;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+}
+.team-row--header {
+  padding: 6px 0;
+  border-top: none;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.team-row--header .team-row__actions {
+  justify-content: flex-end;
+}
+.team-row__person {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.team-row__detail {
+  font-size: 12px;
+  color: var(--text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.team-row__detail--warning {
+  color: var(--danger);
+}
+.team-row__actions {
+  display: flex;
+  gap: 6px;
+  justify-content: flex-end;
+}
+.team-row__actions button {
+  padding: 4px 10px;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.team-row__actions button:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.team-row--editing {
+  align-items: start;
+}
+.team-row--editing .team-row__person {
+  gap: 6px;
+}
+.team-row--editing .text-input {
+  padding: 6px 10px;
+  font-size: 13px;
+}
+.team-row__you {
+  margin-left: 6px;
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+.team-row__danger:hover {
+  border-color: var(--danger);
+  color: var(--danger);
+}
