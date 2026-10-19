@@ -17,7 +17,6 @@ import {
 import {
   deleteMember,
   listTeamMembers,
-  setMemberActive,
   updateMember,
 } from "./services/manageMembers";
 import { endSession, startSession } from "./services/sessions";
